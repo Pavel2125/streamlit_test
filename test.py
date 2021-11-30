@@ -4,4 +4,5 @@ import numpy as np
 
 x=[1,2,3,4,5]
 y=[5,4,4,3,2]
-plt.plot(x,y)
+#plt.plot(x,y)
+print(x)
