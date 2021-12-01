@@ -200,7 +200,7 @@ href = f'<a href="data:file/csv;base64,{b64}" download="{fn}">Download Data as C
 st.markdown(href, unsafe_allow_html=True)
 
 # -- Make audio file
-st.audio(make_audio_file(bp_cropped), format='audio/wav')
+#st.audio(make_audio_file(bp_cropped), format='audio/wav')
 
 # -- Notes on whitening
 with st.expander("See notes"):
