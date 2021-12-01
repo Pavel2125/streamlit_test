@@ -23,7 +23,7 @@ import base64
 # Use the non-interactive Agg backend, which is recommended as a
 # thread-safe backend.
 # See https://matplotlib.org/3.3.2/faq/howto_faq.html#working-with-threads.
-import matplotlib as mpl
+#import matplotlib as mpl
 mpl.use("agg")
 
 ##############################################################################
