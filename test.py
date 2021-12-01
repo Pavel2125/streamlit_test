@@ -168,10 +168,10 @@ st.subheader('Raw data')
 center = int(t0)
 strain = deepcopy(strain_data)
 
-with _lock:
-    fig1 = strain.crop(cropstart, cropend).plot()
-    #fig1 = cropped.plot()
-    st.pyplot(fig1, clear_figure=True)
+#with _lock:
+#    fig1 = strain.crop(cropstart, cropend).plot()
+#    #fig1 = cropped.plot()
+#    st.pyplot(fig1, clear_figure=True)
 
 
 # -- Try whitened and band-passed plot
@@ -186,9 +186,9 @@ else:
 
 bp_cropped = bp_data.crop(cropstart, cropend)
 
-with _lock:
-    fig3 = bp_cropped.plot()
-    st.pyplot(fig3, clear_figure=True)
+#with _lock:
+ #   fig3 = bp_cropped.plot()
+  #  st.pyplot(fig3, clear_figure=True)
 
 # -- Allow data download
 download = {'Time':bp_cropped.times, 'Strain':bp_cropped.value}
