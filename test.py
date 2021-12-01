@@ -34,7 +34,7 @@ import base64
 # class-level lock in the Agg backend.
 ##############################################################################
 #from matplotlib.backends.backend_agg import RendererAgg
-_lock = RendererAgg.lock
+#_lock = RendererAgg.lock
 
 
 # -- Set page config
