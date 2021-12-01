@@ -10,10 +10,10 @@ import numpy as np
 
 
 import requests, os
-from gwpy.timeseries import TimeSeries
-from gwosc.locate import get_urls
-from gwosc import datasets
-from gwosc.api import fetch_event_json
+#from gwpy.timeseries import TimeSeries
+#from gwosc.locate import get_urls
+#from gwosc import datasets
+#from gwosc.api import fetch_event_json
 
 from copy import deepcopy
 import base64
