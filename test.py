@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
+#echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 import matplotlib.pyplot as plt
 
 #x=[1,2,3,4,5]
