@@ -6,17 +6,17 @@ import numpy as np
 #echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 import matplotlib.pyplot as plt
 
-x=[1,2,3,4,5]
-y=[5,4,4,3,2]
-plt.plot(x,y)
+#x=[1,2,3,4,5]
+#y=[5,4,4,3,2]
+#plt.plot(x,y)
 #print(x)
 
 
 import requests, os
-#from gwpy.timeseries import TimeSeries
-#from gwosc.locate import get_urls
-#from gwosc import datasets
-#from gwosc.api import fetch_event_json
+from gwpy.timeseries import TimeSeries
+from gwosc.locate import get_urls
+from gwosc import datasets
+from gwosc.api import fetch_event_json
 
 from copy import deepcopy
 import base64
@@ -26,8 +26,8 @@ import base64
 # Use the non-interactive Agg backend, which is recommended as a
 # thread-safe backend.
 # See https://matplotlib.org/3.3.2/faq/howto_faq.html#working-with-threads.
-#import matplotlib as mpl
-#mpl.use("agg")
+import matplotlib as mpl
+mpl.use("agg")
 
 ##############################################################################
 # Workaround for the limited multi-threading support in matplotlib.
