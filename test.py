@@ -38,7 +38,7 @@ import base64
 
 
 # -- Set page config
-apptitle = 'GW Quickview'
+apptitle = 'HPC Quickview'
 
 st.set_page_config(page_title=apptitle, page_icon=":eyeglasses:")
 
