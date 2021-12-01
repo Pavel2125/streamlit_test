@@ -217,13 +217,21 @@ st.subheader('Q-transform')
 hq = strain.q_transform(outseg=(t0-dt, t0+dt), qrange=qrange)
 
 with _lock:
-    fig4 = hq.plot()
-    ax = fig4.gca()
-    fig4.colorbar(label="Normalised energy", vmax=vmax, vmin=0)
-    ax.grid(False)
-    ax.set_yscale('log')
-    ax.set_ylim(bottom=15)
-    st.pyplot(fig4, clear_figure=True)
+#    fig4 = hq.plot()
+ #   ax = fig4.gca()
+  #  fig4.colorbar(label="Normalised energy", vmax=vmax, vmin=0)
+   # ax.grid(False)
+    #ax.set_yscale('log')
+    #ax.set_ylim(bottom=15)
+    #st.pyplot(fig4, clear_figure=True)
+    
+    arr = np.random.normal(1, 1, size=100)
+
+    fig4 = plt.figure()
+
+    plt.hist(arr, bins=20)
+
+    st.plotly_chart(fig4)
 
 
  
