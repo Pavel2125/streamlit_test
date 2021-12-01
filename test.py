@@ -70,7 +70,7 @@ st.markdown("""
     #eventlist.sort()
     #return eventlist
     
-st.sidebar.markdown("## Select Data Time and Detector")
+#st.sidebar.markdown("## Select Data Time and Detector")
 
 # -- Get list of events
 #eventlist = get_eventlist()
