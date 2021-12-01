@@ -36,8 +36,8 @@ mpl.use("agg")
 # Moreover, we will guard all operations on the figure instances by the
 # class-level lock in the Agg backend.
 ##############################################################################
-#from matplotlib.backends.backend_agg import RendererAgg
-#_lock = RendererAgg.lock
+from matplotlib.backends.backend_agg import RendererAgg
+_lock = RendererAgg.lock
 
 
 # -- Set page config
@@ -56,10 +56,10 @@ st.markdown("""
  * Your plots will appear below
 """)
 
-#@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
-#def load_gw(t0, detector, fs=4096):
-    #strain = TimeSeries.fetch_open_data(detector, t0-14, t0+14, sample_rate = fs, cache=False)
-    #return strain
+@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
+def load_gw(t0, detector, fs=4096):
+    strain = TimeSeries.fetch_open_data(detector, t0-14, t0+14, sample_rate = fs, cache=False)
+    return strain
 
 #@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
 #def get_eventlist():
