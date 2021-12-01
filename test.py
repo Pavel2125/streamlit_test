@@ -24,7 +24,7 @@ import base64
 # thread-safe backend.
 # See https://matplotlib.org/3.3.2/faq/howto_faq.html#working-with-threads.
 #import matplotlib as mpl
-mpl.use("agg")
+#mpl.use("agg")
 
 ##############################################################################
 # Workaround for the limited multi-threading support in matplotlib.
