@@ -199,22 +199,6 @@ fn =  detector + '-STRAIN' + '-' + str(int(cropstart)) + '-' + str(int(cropend-c
 href = f'<a href="data:file/csv;base64,{b64}" download="{fn}">Download Data as CSV File</a>'
 st.markdown(href, unsafe_allow_html=True)
 
-# -- Make audio file
-#st.audio(make_audio_file(bp_cropped), format='audio/wav')
-
-# -- Notes on whitening
-with st.expander("See notes"):
-    st.markdown("""
- * Whitening is a process that re-weights a signal, so that all frequency bins have a nearly equal amount of noise. 
- * A band-pass filter uses both a low frequency cutoff and a high frequency cutoff, and only passes signals in the frequency band between these values.
-See also:
- * [Signal Processing Tutorial](https://share.streamlit.io/jkanner/streamlit-audio/main/app.py)
-""")
-
-
-st.subheader('Q-transform')
-
-hq = strain.q_transform(outseg=(t0-dt, t0+dt), qrange=qrange)
 
 with _lock:
 #    fig4 = hq.plot()
