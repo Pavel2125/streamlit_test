@@ -61,17 +61,17 @@ def load_gw(t0, detector, fs=4096):
     strain = TimeSeries.fetch_open_data(detector, t0-14, t0+14, sample_rate = fs, cache=False)
     return strain
 
-#@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
-#def get_eventlist():
- #   allevents = datasets.find_datasets(type='events')
-  #  eventset = set()
-   # for ev in allevents:
-    #    name = fetch_event_json(ev)['events'][ev]['commonName']
-     #   if name[0:2] == 'GW':
-      #      eventset.add(name)
-    #eventlist = list(eventset)
-    #eventlist.sort()
-    #return eventlist
+@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
+def get_eventlist():
+  allevents = datasets.find_datasets(type='events')
+   eventset = set()
+   for ev in allevents:
+       name = fetch_event_json(ev)['events'][ev]['commonName']
+        if name[0:2] == 'GW':
+      #     eventset.add(name)
+    eventlist = list(eventset)
+    eventlist.sort()
+    return eventlist
     
 st.sidebar.markdown("## Select Data Time and Detector")
 
