@@ -53,12 +53,12 @@ st.markdown("""
  * Your plots will appear below
 """)
 
-@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
+#@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
 #def load_gw(t0, detector, fs=4096):
     #strain = TimeSeries.fetch_open_data(detector, t0-14, t0+14, sample_rate = fs, cache=False)
     #return strain
 
-@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
+#@st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
 #def get_eventlist():
  #   allevents = datasets.find_datasets(type='events')
   #  eventset = set()
@@ -70,8 +70,8 @@ st.markdown("""
     #eventlist.sort()
     #return eventlist
     
-#st.sidebar.markdown("## Select Data Time and Detector")
+st.sidebar.markdown("## Select Data Time and Detector")
 
 # -- Get list of events
-#eventlist = get_eventlist()
+# eventlist = get_eventlist()
 
