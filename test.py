@@ -68,7 +68,7 @@ def get_eventlist():
    for ev in allevents:
        name = fetch_event_json(ev)['events'][ev]['commonName']
         if name[0:2] == 'GW':
-      #     eventset.add(name)
+           eventset.add(name)
     eventlist = list(eventset)
     eventlist.sort()
     return eventlist
