@@ -33,7 +33,7 @@ import base64
 # Moreover, we will guard all operations on the figure instances by the
 # class-level lock in the Agg backend.
 ##############################################################################
-from matplotlib.backends.backend_agg import RendererAgg
+#from matplotlib.backends.backend_agg import RendererAgg
 _lock = RendererAgg.lock
 
 
