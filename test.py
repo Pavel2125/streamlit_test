@@ -56,6 +56,21 @@ st.markdown("""
  * Your plots will appear below
 """)
 
+with _lock:
+#    fig4 = hq.plot()
+ #   ax = fig4.gca()
+  #  fig4.colorbar(label="Normalised energy", vmax=vmax, vmin=0)
+   # ax.grid(False)
+    #ax.set_yscale('log')
+    #ax.set_ylim(bottom=15)
+    #st.pyplot(fig4, clear_figure=True)
+    
+    arr = np.random.normal(1, 1, size=100)
+    fig4 = plt.figure()
+    plt.hist(arr, bins=20)
+    #st.plotly_chart(fig4)
+    st.pyplot(fig4, clear_figure=True)
+
 @st.cache(ttl=3600, max_entries=10)   #-- Magic command to cache data
 def load_gw(t0, detector, fs=4096):
     strain = TimeSeries.fetch_open_data(detector, t0-14, t0+14, sample_rate = fs, cache=False)
