@@ -46,7 +46,7 @@ st.set_page_config(page_title=apptitle, page_icon=":eyeglasses:")
 detectorlist = ['H1','L1', 'V1']
 
 # Title the app
-st.title('Gravitational Wave Quickview')
+st.title('Graphic interface for High Pressure Cell calculation')
 
 st.markdown("""
  * Use the menu at left to select data and set plot parameters
