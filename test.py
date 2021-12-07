@@ -58,6 +58,12 @@ st.markdown("""
  * List of the cells will appear below
 """)
 
+df = pd.DataFrame(
+       np.random.randn(10, 5),
+        columns=('col %d' % i for i in range(5)))
+         st.table(df)
+
+
 # -- Create sidebar for plot controls
 st.sidebar.markdown('## Set Cell Parameters')
 Pressure_max = st.sidebar.slider('Maximal Pressure (kbar)', 5.0, 20.0, 7.0)  # min, max, default
@@ -99,9 +105,6 @@ with _lock:
     st.pyplot(fig4, clear_figure=True)
 
 
-      df = pd.DataFrame(
-       np.random.randn(10, 5),
-        columns=('col %d' % i for i in range(5)))
-         st.table(df)
+      
  
 
