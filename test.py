@@ -56,7 +56,7 @@ st.markdown("""
  * List of the cells will appear below
 """)
 
-Pressure=st.slider ("Maximal pressure")
+#Pressure=st.slider ("Maximal pressure")
 #st.write(m.run(window= 
 
 with _lock:
@@ -70,9 +70,10 @@ with _lock:
       
     
     
-   # arr = np.random.normal(1, 1, size=100)
-   # fig4 = plt.figure()
-   # plt.hist(arr, bins=20)
+  
+    arr = np.random.normal(1, 1, size=100)
+    fig4 = plt.figure()
+    plt.hist(arr, bins=20)
    # #st.plotly_chart(fig4)
    # st.pyplot(fig4, clear_figure=True)
 
