@@ -78,7 +78,7 @@ t0 = float(str_t0)
 
 K = OD/In
 Attenuation_length = np.random.randn(2,4)
-Attenuation_length[0,1] = 0.06022102
+Attenuation_length[0,2] = 0.06022102
 
 Total = np.random.randn(6, 3)
 Total[0,]=In
@@ -90,8 +90,8 @@ Total[3,]=Pressure_max
 
 df2 = pd.DataFrame(
   data=Attenuation_length,
-#  np.random.randn(2,4),
-  columns=('TAV6','CuBe','Al', 'NiCrAl'))
+  columns=('TAV6','CuBe','Al', 'NiCrAl'),
+  index = ('Attenuation length 5 meV','Attenuation length 20 meV'))
   
   
 #Attenuation_length[0,1] = 0.06022102 #Attenuation length TAV6 20 meV
