@@ -89,8 +89,8 @@ Total[3,]=Pressure_max
 #st.write('K=a/b', K)
 
 df2 = pd.DataFrame(
-#  data=Attenuation_length,
-  np.random.randn(2,4),
+  data=Attenuation_length,
+#  np.random.randn(2,4),
   columns=('TAV6','CuBe','Al', 'NiCrAl'))
   
   
