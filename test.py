@@ -92,7 +92,7 @@ df2 = pd.DataFrame(
   columns=('TAV6','CuBe','Al', 'NiCrAl'))
   
   
-Attenuation_length[0,1] = 0.06022102 #Attenuation length TAV6 20 meV
+#Attenuation_length[0,1] = 0.06022102 #Attenuation length TAV6 20 meV
 #TAV6_5 = 0.09885926 [1/mm][1] ""
 #Attenuation length CuBe 20 meV = 0.1195674 [1/mm][1] ""
 #Attenuation length CuBe 5.1meV = 0.1089454 [1/mm][1] ""
