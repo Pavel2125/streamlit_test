@@ -82,7 +82,8 @@ K = OD/In
 st.write('K=a/b', K)
 st.write('K=a/b', K)
 
-
+Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+                 
 with _lock:
 #    fig4 = hq.plot()
  #   ax = fig4.gca()
@@ -92,7 +93,7 @@ with _lock:
     #ax.set_ylim(bottom=15)
     #st.pyplot(fig4, clear_figure=True)
 
- Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+ 
     
      df = pd.DataFrame(
 #           np.random.randn(3, 3),
