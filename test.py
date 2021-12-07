@@ -82,7 +82,7 @@ K = OD/In
 st.write('K=a/b', K)
 st.write('K=a/b', K)
 
-Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+#Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
                  
 with _lock:
 #    fig4 = hq.plot()
@@ -96,8 +96,8 @@ with _lock:
  
     
      df = pd.DataFrame(
-#           np.random.randn(3, 3),
-           data=Total,
+           np.random.randn(3, 3),
+#           data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
            index=('Inner diameter', 'Outer diameter', 'K=a/b'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
