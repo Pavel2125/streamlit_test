@@ -62,7 +62,10 @@ Pressure_max = st.sidebar.slider('Maximal Pressure (kbar)', 5.0, 20.0, 7.0)  # m
 In = st.sidebar.slider('Diameter of sample channel', 3.0, 8.0, 6.0)  # min, max, default
 OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, default
 
+#K = OD/In
+#print(K)
 
+st.write('Mass 1:')
 
 with _lock:
 #    fig4 = hq.plot()
@@ -73,8 +76,7 @@ with _lock:
     #ax.set_ylim(bottom=15)
     #st.pyplot(fig4, clear_figure=True)
       
-K = OD/In
-print(K)
+
     
   
     arr = np.random.normal(1, 1, size=100)
