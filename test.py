@@ -79,6 +79,7 @@ t0 = float(str_t0)
 K = OD/In
 #Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
 Total = np.random.randn(3, 3)
+Total[1,]=K
 st.write('K=a/b', K)
 st.write('K=a/b', K)
 
