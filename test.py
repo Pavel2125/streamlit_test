@@ -46,7 +46,7 @@ apptitle = 'HPC Quickview'
 st.set_page_config(page_title=apptitle, page_icon=":eyeglasses:")
 
 # -- Default detector list
-detectorlist = ['H1','L1', 'V1']
+cellslist = ['CuBe/TAV6','CuBe/Al', 'NiCrAl/Al']
 
 # Title the app
 st.title('Graphic interface for High Pressure Cell calculation')
@@ -62,8 +62,11 @@ Pressure_max = st.sidebar.slider('Maximal Pressure (kbar)', 5.0, 20.0, 7.0)  # m
 In = st.sidebar.slider('Diameter of sample channel', 3.0, 8.0, 6.0)  # min, max, default
 OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, default
 
+
 str_t0 = st.sidebar.text_input('GPS Time', '1126259462.4')    # -- GW150914
 t0 = float(str_t0)
+chosen_event = st.sidebar.selectbox('Select Event', cellslist)
+
 K = OD/In
 
 
