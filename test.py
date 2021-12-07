@@ -102,7 +102,7 @@ with _lock:
 #       np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)],
         data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
-           index=('Inner diameter', 'Outer diameter', 'K=a/b'))
+           index=('Inner diameter', 'Outer diameter', 'K=a/b', 'Maximal pressure'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
 #           columns=('cola %d' % i for i in range(5)))
 st.table(df)    
