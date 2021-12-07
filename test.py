@@ -56,6 +56,12 @@ st.markdown("""
  * List of the cells will appear below
 """)
 
+# -- Create sidebar for plot controls
+st.sidebar.markdown('## Set Cell Parameters')
+Pressure_max = st.sidebar.slider('Maximal Pressure (kbar)', 5.0, 20.0, 7.0)  # min, max, default
+# dt = dtboth / 10.0
+
+
 Pressure = st.slider ("Maximal pressure")
 In = st.slider ("Diameter of sample chamber")
 OD = st.slider ("Diameter of the cell")
@@ -80,9 +86,6 @@ with _lock:
     st.pyplot(fig4, clear_figure=True)
 
 
-# -- Create sidebar for plot controls
-st.sidebar.markdown('## Set Plot Parameters')
-dtboth = st.sidebar.slider('Time Range (seconds)', 0.1, 8.0, 1.0)  # min, max, default
-# dt = dtboth / 10.0
+
  
 
