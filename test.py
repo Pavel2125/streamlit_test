@@ -78,12 +78,17 @@ t0 = float(str_t0)
 
 K = OD/In
 Attenuation_length = np.random.randn(2,4)
-Attenuation_length[0,0] = 0.09885926  #Attenuation length TAV6 5.1 meV
-Attenuation_length[1,0] = 0.06022102  #Attenuation length TAV6 20 meV
-Attenuation_length[0,1] =  0.1089454 #Attenuation length CuBe 5.1meV
-Attenuation_length[1,1]=  0.1195674    #Attenuation length CuBe 20 meV
-
-Total = np.random.randn(6, 3)
+Attenuation_length[0,0]=  0.09885926    #Attenuation length TAV6 5.1 meV
+Attenuation_length[1,0]=  0.06022102    #Attenuation length TAV6 20 meV
+Attenuation_length[0,1]=  0.1089454     #Attenuation length CuBe 5.1meV
+Attenuation_length[1,1]=  0.1195674     #Attenuation length CuBe 20 meV
+Attenuation_length[0,2]=  0.01237508    #Attenuation length Al 5.1meV
+Attenuation_length[1,2]=  0.008164399   #Attenuation length Al 20.4meV
+Attenuation_length[0,3]=  0.1467938     #Attenuation length NiCrAl 5.1meV
+Attenuation_length[1,3]=  0.1783196     #Attenuation length NiCrAl 20.4meV
+  
+  
+ Total = np.random.randn(6, 3)
 Total[0,]=In
 Total[1,]=OD
 Total[2,]=K
@@ -97,12 +102,7 @@ df2 = pd.DataFrame(
   index = ('Attenuation length 5.1 meV','Attenuation length 20 meV'))
   
   
-
-#Attenuation length Al 20.4meV = 0.008164399 [1/mm][1] ""
-#Attenuation length Al 5.1meV = 0.01237508 [1/mm][1] ""
-#Attenuation length NiCrAl 20.4meV = 0.1783196 [1/mm][1] ""
-#Attenuation length NiCrAl 5.1meV = 0.1467938 [1/mm]
-
+ 
 st.table(df2)
                  
 with _lock:
