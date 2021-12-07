@@ -46,7 +46,7 @@ apptitle = 'HPC Quickview'
 st.set_page_config(page_title=apptitle, page_icon=":eyeglasses:")
 
 # -- Default material list
-first_material = ['CuBe', 'NiCrAl']
+first_material = ['CuBe', 'NiCrAl', 'Al']
 second_material = ['TAV6','Al']
 third_material = ['TAV6','Al']
 
