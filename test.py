@@ -65,11 +65,14 @@ In = st.sidebar.slider('Diameter of sample channel', 3.0, 8.0, 6.0)  # min, max,
 OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, default
 
 
-str_t0 = st.sidebar.text_input('GPS Time', '1126259462.4')    # -- GW150914
+
+first = st.sidebar.selectbox('Select inner material', first_material)
+second = st.sidebar.selectbox('Select second material', second_material)
+third = st.sidebar.selectbox('Select third material', third_material)
+
+str_t0 = st.sidebar.text_input('Energy, meV', '5')    
 t0 = float(str_t0)
-chosen_event = st.sidebar.selectbox('Select inner material', first_material)
-chosen_event = st.sidebar.selectbox('Select second material', second_material)
-chosen_event = st.sidebar.selectbox('Select third material', third_material)
+
 K = OD/In
 
 
