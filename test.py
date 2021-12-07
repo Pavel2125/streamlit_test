@@ -88,7 +88,7 @@ Attenuation_length[0,3]=  0.1467938     #Attenuation length NiCrAl 5.1meV
 Attenuation_length[1,3]=  0.1783196     #Attenuation length NiCrAl 20.4meV
   
   
- Total = np.random.randn(6, 3)
+Total = np.random.randn(6, 3)
 Total[0,]=In
 Total[1,]=OD
 Total[2,]=K
