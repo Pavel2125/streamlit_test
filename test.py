@@ -78,8 +78,9 @@ t0 = float(str_t0)
 
 K = OD/In
 Attenuation_length = np.random.randn(2,4)
-Attenuation_length[0,0] = 0.06022102 #Attenuation length TAV6 20 meV
-Attenuation_length[1,0] = 0.09885926
+Attenuation_length[0,0] = 0.09885926
+Attenuation_length[1,0] = 0.06022102 #Attenuation length TAV6 20 meV
+
 
 Total = np.random.randn(6, 3)
 Total[0,]=In
