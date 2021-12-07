@@ -97,8 +97,8 @@ with _lock:
     
      df = pd.DataFrame(
 
-#       np.random.randn(3, 3),
-       np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)],
+       np.random.randn(3, 3),
+#       np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)],
        #           data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
            index=('Inner diameter', 'Outer diameter', 'K=a/b'))
