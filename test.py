@@ -105,7 +105,7 @@ df2 = pd.DataFrame(
  
 st.table(df2)
 
-Total[5,0]=0
+Total[5,0]= (exp(-Attenuation_length[0,1]))*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
 with _lock:
