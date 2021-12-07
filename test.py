@@ -80,6 +80,9 @@ with _lock:
     st.pyplot(fig4, clear_figure=True)
 
 
-
+# -- Create sidebar for plot controls
+st.sidebar.markdown('## Set Plot Parameters')
+dtboth = st.sidebar.slider('Time Range (seconds)', 0.1, 8.0, 1.0)  # min, max, default
+dt = dtboth / 2.0
  
 
