@@ -94,8 +94,8 @@ with _lock:
      
     
      df = pd.DataFrame(
-           np.random.randn(10, 5),
-           columns=('col %d' % i for i in range(5)))
+           K,
+           columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
 st.table(df)    
   
 
