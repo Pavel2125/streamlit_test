@@ -63,7 +63,7 @@ In = st.sidebar.slider('Diameter of sample channel', 3.0, 8.0, 6.0)  # min, max,
 OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, default
 
 str_t0 = st.sidebar.text_input('GPS Time', '1126259462.4')    # -- GW150914
-   t0 = float(str_t0)
+t0 = float(str_t0)
 K = OD/In
 
 
