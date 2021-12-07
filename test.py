@@ -93,9 +93,9 @@ with _lock:
     #st.pyplot(fig4, clear_figure=True)
      
     
-df = pd.DataFrame(
-       np.random.randn(10, 5),
-       columns=('col %d' % i for i in range(5)))
+     df = pd.DataFrame(
+           np.random.randn(10, 5),
+           columns=('col %d' % i for i in range(5)))
 st.table(df)    
   
 
