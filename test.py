@@ -86,7 +86,22 @@ Total[3,]=Pressure_max
 #st.write('K=a/b', K)
 #st.write('K=a/b', K)
 
+df2 = pd.DataFrame(
+#  data=Attenuation length,
+  np.random.randn(2,4),
+  columns=('TAV6','CuBe','Al', 'NiCrAl'))
+  
+  
+#TAV6_20 = 0.06022102
+#TAV6_5 = 0.09885926 [1/mm][1] ""
+#Attenuation length CuBe 20 meV = 0.1195674 [1/mm][1] ""
+#Attenuation length CuBe 5.1meV = 0.1089454 [1/mm][1] ""
+#Attenuation length Al 20.4meV = 0.008164399 [1/mm][1] ""
+#Attenuation length Al 5.1meV = 0.01237508 [1/mm][1] ""
+#Attenuation length NiCrAl 20.4meV = 0.1783196 [1/mm][1] ""
+#Attenuation length NiCrAl 5.1meV = 0.1467938 [1/mm]
 
+st.table(df2)
                  
 with _lock:
 #    fig4 = hq.plot()
@@ -97,18 +112,16 @@ with _lock:
     #ax.set_ylim(bottom=15)
     #st.pyplot(fig4, clear_figure=True)
 
- 
-    
-     df = pd.DataFrame(
 
-#       np.random.randn(3, 3),
-#       np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)],
+
+    
+     df2 = pd.DataFrame(
         data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
            index=('Inner diameter', 'Outer diameter', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
 #           columns=('cola %d' % i for i in range(5)))
-st.table(df)    
+st.table(df2)    
   
 
 
