@@ -94,7 +94,7 @@ with _lock:
      
     
      df = pd.DataFrame(
-           np.random.randn(3 3),
+           np.random.randn(3, 3),
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al')
            rows=('Inner diameter', 'Outer diameter', 'K=a/b'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
