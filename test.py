@@ -92,7 +92,7 @@ with _lock:
     #ax.set_ylim(bottom=15)
     #st.pyplot(fig4, clear_figure=True)
 
-Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+     Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
     
      df = pd.DataFrame(
 #           np.random.randn(3, 3),
