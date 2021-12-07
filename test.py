@@ -65,7 +65,7 @@ OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, d
 K = OD/In
 #print(K)
 
-st.write('Mass 1:')
+st.write('Mass 1:', K)
 
 with _lock:
 #    fig4 = hq.plot()
