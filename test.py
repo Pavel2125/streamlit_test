@@ -91,10 +91,12 @@ with _lock:
     #ax.set_yscale('log')
     #ax.set_ylim(bottom=15)
     #st.pyplot(fig4, clear_figure=True)
-     
+
+Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
     
      df = pd.DataFrame(
-           np.random.randn(3, 3),
+#           np.random.randn(3, 3),
+           data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
            index=('Inner diameter', 'Outer diameter', 'K=a/b'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
