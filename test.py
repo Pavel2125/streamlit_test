@@ -58,10 +58,7 @@ st.markdown("""
  * List of the cells will appear below
 """)
 
-df = pd.DataFrame(
-       np.random.randn(10, 5),
-       columns=('col %d' % i for i in range(5)))
-st.table(df)
+
 
 
 # -- Create sidebar for plot controls
@@ -96,13 +93,18 @@ with _lock:
     #st.pyplot(fig4, clear_figure=True)
      
     
-    
+df = pd.DataFrame(
+       np.random.randn(10, 5),
+       columns=('col %d' % i for i in range(5)))
+st.table(df)    
   
-    arr = np.random.normal(1, 1, size=100)
-    fig4 = plt.figure()
-    plt.hist(arr, bins=20)
+
+
+    #arr = np.random.normal(1, 1, size=100)
+    #fig4 = plt.figure()
+    #plt.hist(arr, bins=20)
    # #st.plotly_chart(fig4)
-    st.pyplot(fig4, clear_figure=True)
+    #st.pyplot(fig4, clear_figure=True)
 
 
       
