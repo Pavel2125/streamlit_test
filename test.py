@@ -77,8 +77,8 @@ str_t0 = st.sidebar.text_input('Energy, meV', '5')
 t0 = float(str_t0)
 
 K = OD/In
-#Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
-Total = np.random.randn(4, 3)
+
+Total = np.random.randn(6, 3)
 Total[0,]=In
 Total[1,]=OD
 Total[2,]=K
@@ -105,7 +105,7 @@ with _lock:
 #       np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)],
         data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
-           index=('Inner diameter', 'Outer diameter', 'K=a/b', 'Maximal pressure'))
+           index=('Inner diameter', 'Outer diameter', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
 #           columns=('cola %d' % i for i in range(5)))
 st.table(df)    
