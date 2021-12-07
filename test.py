@@ -77,12 +77,12 @@ str_t0 = st.sidebar.text_input('Energy, meV', '5')
 t0 = float(str_t0)
 
 K = OD/In
-
+Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
 
 st.write('K=a/b', K)
 st.write('K=a/b', K)
 
-#Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+
                  
 with _lock:
 #    fig4 = hq.plot()
