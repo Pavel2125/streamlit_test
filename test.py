@@ -73,7 +73,8 @@ with _lock:
     #ax.set_ylim(bottom=15)
     #st.pyplot(fig4, clear_figure=True)
       
-    
+K = OD/In
+print(K)
     
   
     arr = np.random.normal(1, 1, size=100)
