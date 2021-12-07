@@ -57,6 +57,8 @@ st.markdown("""
 """)
 
 Pressure = st.slider ("Maximal pressure")
+In = st.slider ("Diameter of sample chamber")
+OD = st.slider ("Diameter of the cell")
 #st.write(m.run(window= 
 
 with _lock:
