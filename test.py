@@ -77,7 +77,7 @@ str_t0 = st.sidebar.text_input('Energy, meV', '5')
 t0 = float(str_t0)
 
 K = OD/In
-Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+#Total = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)]
 
 st.write('K=a/b', K)
 st.write('K=a/b', K)
@@ -96,8 +96,10 @@ with _lock:
  
     
      df = pd.DataFrame(
-           np.random.randn(3, 3),
-#           data=Total,
+
+#       np.random.randn(3, 3),
+       np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)],
+       #           data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
            index=('Inner diameter', 'Outer diameter', 'K=a/b'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
