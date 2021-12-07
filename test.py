@@ -56,7 +56,7 @@ st.markdown("""
  * List of the cells will appear below
 """)
 
-#Pressure=st.slider ("Maximal pressure")
+Pressure = st.slider ("Maximal pressure")
 #st.write(m.run(window= 
 
 with _lock:
