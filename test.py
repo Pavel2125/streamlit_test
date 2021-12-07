@@ -45,8 +45,10 @@ apptitle = 'HPC Quickview'
 
 st.set_page_config(page_title=apptitle, page_icon=":eyeglasses:")
 
-# -- Default detector list
-cellslist = ['CuBe/TAV6','CuBe/Al', 'NiCrAl/Al']
+# -- Default material list
+first_material = ['CuBe', 'NiCrAl']
+second_material = ['TAV6','Al']
+third_material = ['TAV6','Al']
 
 # Title the app
 st.title('Graphic interface for High Pressure Cell calculation')
@@ -65,8 +67,9 @@ OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, d
 
 str_t0 = st.sidebar.text_input('GPS Time', '1126259462.4')    # -- GW150914
 t0 = float(str_t0)
-chosen_event = st.sidebar.selectbox('Select Event', cellslist)
-
+chosen_event = st.sidebar.selectbox('Select inner material', first_material)
+chosen_event = st.sidebar.selectbox('Select second material', second_material)
+chosen_event = st.sidebar.selectbox('Select third material', third_material)
 K = OD/In
 
 
