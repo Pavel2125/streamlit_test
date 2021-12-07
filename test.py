@@ -59,13 +59,10 @@ st.markdown("""
 # -- Create sidebar for plot controls
 st.sidebar.markdown('## Set Cell Parameters')
 Pressure_max = st.sidebar.slider('Maximal Pressure (kbar)', 5.0, 20.0, 7.0)  # min, max, default
-# dt = dtboth / 10.0
+In = st.sidebar.slider('Diameter of sample channel', 3.0, 8.0, 6.0)  # min, max, default
+OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, default
 
 
-Pressure = st.slider ("Maximal pressure")
-In = st.slider ("Diameter of sample chamber")
-OD = st.slider ("Diameter of the cell")
-#st.write(m.run(window= 
 
 with _lock:
 #    fig4 = hq.plot()
