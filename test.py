@@ -62,7 +62,7 @@ Pressure_max = st.sidebar.slider('Maximal Pressure (kbar)', 5.0, 20.0, 7.0)  # m
 In = st.sidebar.slider('Diameter of sample channel', 3.0, 8.0, 6.0)  # min, max, default
 OD = st.sidebar.slider('Diameter of the cell', 10.0, 100.0, 46.0)  # min, max, default
 
-#K = OD/In
+K = OD/In
 #print(K)
 
 st.write('Mass 1:')
