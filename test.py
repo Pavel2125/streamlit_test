@@ -52,8 +52,8 @@ detectorlist = ['H1','L1', 'V1']
 st.title('Graphic interface for High Pressure Cell calculation')
 
 st.markdown("""
- * Use the menu at left to select data and set plot parameters
- * Your plots will appear below
+ * Use the menu at left to select parameters
+ * List of the cells will appear below
 """)
 
 with _lock:
