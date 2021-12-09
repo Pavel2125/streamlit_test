@@ -130,7 +130,8 @@ Sigma[2]=Attenuation_length[2,2]
 
 P_max=np.random.randn(3)
 #P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
-P_max=(Sigma/2)*(Alfa*(1-(In/c)^2) + 1 - (c/OD)^2) 
+P_max=(Sigma/2)*(Alfa)
+#*(1-(In/c)^2) + 1 - (c/OD)^2) 
 
 Total = np.random.randn(8, 3)
 Total[0,]=In
