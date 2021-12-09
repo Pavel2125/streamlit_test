@@ -125,14 +125,14 @@ P_max=np.exp(Alfa)
 
 Total = np.random.randn(8, 3)
 Total[0,]=In
-Total[1,]=OD
-Total[2,]=K
-Total[3,]=P_max
-Total[5,0]= Attenuation_length[0,1]
-Total[6,0]= Attenuation_length[2,1]/Attenuation_length[2,0]
-Total[6,1]= Attenuation_length[2,1]/Attenuation_length[2,2]
-Total[6,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
-Total[7,2]= np.sqrt(np.sqrt(Attenuation_length[2,3]/Attenuation_length[2,2]))*np.sqrt(In*OD)
+Total[1,]=np.sqrt(np.sqrt(Attenuation_length[2,3]/Attenuation_length[2,2]))*np.sqrt(In*OD)
+Total[2,]=OD
+Total[3,]=K
+Total[4,]=P_max
+Total[6,0]= Attenuation_length[0,1]
+Total[7,0]= Attenuation_length[2,1]/Attenuation_length[2,0]
+Total[7,1]= Attenuation_length[2,1]/Attenuation_length[2,2]
+Total[7,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
 #*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
@@ -153,7 +153,7 @@ with _lock:
      df2 = pd.DataFrame(
         data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
-           index=('Inner diameter', 'Outer diameter', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV', 'Alfa','c'))
+           index=('Inner diameter "a",mm', 'First material diameter "c",mm', 'Outer diameter "b", mm', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV', 'Alfa'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
 #           columns=('cola %d' % i for i in range(5)))
 st.table(df2)    
