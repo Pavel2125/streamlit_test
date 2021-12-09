@@ -80,11 +80,7 @@ K = OD/In
 
   
   
-Total = np.random.randn(7, 3)
-Total[0,]=In
-Total[1,]=OD
-Total[2,]=K
-Total[3,]=Pressure_max
+
 st.write('K=a/b', K)
 #st.write('K=a/b', K)
 
@@ -116,7 +112,13 @@ df2 = pd.DataFrame(
  
 st.table(df2)
 
+Total = np.random.randn(7, 3)
+Total[0,]=In
+Total[1,]=OD
+Total[2,]=K
+Total[3,]=Pressure_max
 Total[5,0]= Attenuation_length[0,1]
+Total[6,0]= Attenuation_length[2,1]/Attenuation_length[2,0]
 #*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
