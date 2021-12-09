@@ -107,10 +107,20 @@ df2 = pd.DataFrame(
   data=Attenuation_length,
   columns=('TAV6','CuBe','Al', 'NiCrAl'),
   index = ('Attenuation length 5.1 meV','Attenuation length 20 meV','Yield strength MPa'  ))
-  
-  
- 
 st.table(df2)
+
+
+Alfa=np.random.randn(3)
+Alfa[0]=Attenuation_length[2,1]/Attenuation_length[2,0]
+Alfa[1]=Attenuation_length[2,1]/Attenuation_length[2,2]
+Alfa[2]=Attenuation_length[2,3]/Attenuation_length[2,2]
+st.write('Alfa', Alfa)
+
+P_max=np.random.randn(3)
+#P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
+P_max=Alfa 
+
+
 
 Total = np.random.randn(7, 3)
 Total[0,]=In
@@ -124,15 +134,7 @@ Total[6,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
 #*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
-Alfa=np.random.randn(3)
-Alfa[0]=Attenuation_length[2,1]/Attenuation_length[2,0]
-Alfa[1]=Attenuation_length[2,1]/Attenuation_length[2,2]
-Alfa[2]=Attenuation_length[2,3]/Attenuation_length[2,2]
-st.write('Alfa', Alfa)
 
-P_max=np.random.randn(3)
-#P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
-P_max=Alfa 
 
 with _lock:
 #    fig4 = hq.plot()
