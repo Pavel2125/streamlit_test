@@ -124,6 +124,7 @@ Total[6,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
 #*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
+Alfa=np.random.randn(3)
 Alfa[1]=Attenuation_length[2,1]/Attenuation_length[2,0]
 Alfa[2]=Attenuation_length[2,1]/Attenuation_length[2,2]
 Alfa[3]=Attenuation_length[2,3]/Attenuation_length[2,2]
