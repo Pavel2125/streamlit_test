@@ -156,7 +156,7 @@ with _lock:
      df2 = pd.DataFrame(
         data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
-           index=('Inner diameter "a",mm', 'First material diameter "c",mm', 'Outer diameter "b", mm', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV', 'Alfa'))
+           index=('Inner diameter "a",mm', 'First material diameter "c",mm', 'Outer diameter "b",mm', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV', 'Alfa'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
 #           columns=('cola %d' % i for i in range(5)))
 st.table(df2)    
