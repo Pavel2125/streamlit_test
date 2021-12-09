@@ -130,9 +130,10 @@ Total[2,]=OD
 Total[3,]=K
 Total[4,]=P_max
 Total[6,0]= Attenuation_length[0,1]
-Total[7,0]= Attenuation_length[2,1]/Attenuation_length[2,0]
-Total[7,1]= Attenuation_length[2,1]/Attenuation_length[2,2]
-Total[7,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
+Total[7,]= Alfa
+#Total[7,0]= Attenuation_length[2,1]/Attenuation_length[2,0]
+#Total[7,1]= Attenuation_length[2,1]/Attenuation_length[2,2]
+#Total[7,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
 #*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
