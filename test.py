@@ -116,7 +116,7 @@ Total = np.random.randn(7, 3)
 Total[0,]=In
 Total[1,]=OD
 Total[2,]=K
-Total[3,]=Pressure_max
+Total[3,]=P_max
 Total[5,0]= Attenuation_length[0,1]
 Total[6,0]= Attenuation_length[2,1]/Attenuation_length[2,0]
 Total[6,1]= Attenuation_length[2,1]/Attenuation_length[2,2]
@@ -128,10 +128,11 @@ Alfa=np.random.randn(3)
 Alfa[0]=Attenuation_length[2,1]/Attenuation_length[2,0]
 Alfa[1]=Attenuation_length[2,1]/Attenuation_length[2,2]
 Alfa[2]=Attenuation_length[2,3]/Attenuation_length[2,2]
-
 st.write('Alfa', Alfa)
-#P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
 
+P_max=np.random.randn(3)
+#P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
+P_max=Alfa 
 
 with _lock:
 #    fig4 = hq.plot()
