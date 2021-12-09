@@ -80,7 +80,7 @@ K = OD/In
 
   
   
-Total = np.random.randn(6, 3)
+Total = np.random.randn(7, 3)
 Total[0,]=In
 Total[1,]=OD
 Total[2,]=K
@@ -135,7 +135,7 @@ with _lock:
      df2 = pd.DataFrame(
         data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
-           index=('Inner diameter', 'Outer diameter', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV'))
+           index=('Inner diameter', 'Outer diameter', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV', 'Alfa'))
 #          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
 #           columns=('cola %d' % i for i in range(5)))
 st.table(df2)    
