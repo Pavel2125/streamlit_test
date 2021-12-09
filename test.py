@@ -117,13 +117,15 @@ Alfa[2]=Attenuation_length[2,3]/Attenuation_length[2,2]
 #st.write('Alfa', Alfa)
 
 P_max=np.random.randn(3)
-#c=a/2
+
 #P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
 P_max=np.exp(Alfa) 
 
 c=np.random.rand(3)
-c=Alfa
+#c=Alfa
 #c=np.sqrt(np.sqrt(Attenuation_length[2,3]/Attenuation_length[2,2]))*np.sqrt(In*OD)
+c=np.sqrt(np.sqrt(Alfa))*np.sqrt(In*OD)
+
 
 Total = np.random.randn(8, 3)
 Total[0,]=In
