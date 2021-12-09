@@ -93,7 +93,7 @@ Total[0,]=In
 Total[1,]=OD
 Total[2,]=K
 Total[3,]=Pressure_max
-#st.write('K=a/b', K)
+st.write('K=a/b', K)
 #st.write('K=a/b', K)
 
 df2 = pd.DataFrame(
