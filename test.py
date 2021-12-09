@@ -132,7 +132,7 @@ Total[5,0]= Attenuation_length[0,1]
 Total[6,0]= Attenuation_length[2,1]/Attenuation_length[2,0]
 Total[6,1]= Attenuation_length[2,1]/Attenuation_length[2,2]
 Total[6,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
-Total[7,2]= np.sqrt(np.sqrt(Attenuation_length[2,3]/Attenuation_length[2,2]))
+Total[7,2]= np.sqrt(np.sqrt(Attenuation_length[2,3]/Attenuation_length[2,2]))-np.sqrt(In*OD)
 #*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
