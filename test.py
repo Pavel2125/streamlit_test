@@ -132,6 +132,12 @@ P_max=np.random.randn(3)
 #P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
 P_max=(Sigma/2)*(Alfa*(1-(In/c)*(In/c)) + 1 - (c/OD)*(c/OD)) 
 
+Transmission_5= np.random.randn(3)
+Transmission_5[1]=(np.exp(-Attenuation_length[2,1](c-In)))*(np.exp(-Attenuation_length[2,0]*(OD-c))))
+#*(exp(-Attenuation_length[0,0]))
+#<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
+
+
 Total = np.random.randn(8, 3)
 Total[0,]=In
 Total[1,]=c
@@ -141,8 +147,7 @@ Total[4,]=P_max
 Total[6,0]= Attenuation_length[0,1]
 Total[7,]= Alfa
 
-#*(exp(-Attenuation_length[0,0]))
-#<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
+
 
 
 
