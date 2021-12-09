@@ -101,7 +101,7 @@ Attenuation_length[1,2]=  0.008164399   #Attenuation length Al 20.4meV
 Attenuation_length[0,3]=  0.1467938     #Attenuation length NiCrAl 5.1meV
 Attenuation_length[1,3]=  0.1783196     #Attenuation length NiCrAl 20.4meV
 
-Attenuation_length[2,0]<-896 -          #Yield strength TAV6, MPa
+Attenuation_length[2,0]<-896            #Yield strength TAV6, MPa
 Attenuation_length[2,1]<-1240           #Yield strength CuBe, MPa
 Attenuation_length[2,2]<-585            #Yield strength Al, MPa
 Attenuation_length[2,3]<-1530           #Yield strength NiCrAl, MPa
