@@ -134,8 +134,8 @@ P_max=(Sigma/2)*(Alfa*(1-(In/c)*(In/c)) + 1 - (c/OD)*(c/OD))
 
 Transmission_5= np.random.randn(3)
 Transmission_5[0]=(np.exp(-Attenuation_length[0,1]*(c[0]-In)))*(np.exp(-Attenuation_length[0,0]*(OD-c[0])))
-Transmission_5[1]=(np.exp(-Attenuation_length[0,1]*(c[0]-In)))*(np.exp(-Attenuation_length[0,2]*(OD-c[0])))
-Transmission_5[2]=(np.exp(-Attenuation_length[0,3]*(c[0]-In)))*(np.exp(-Attenuation_length[0,2]*(OD-c[0])))
+Transmission_5[1]=(np.exp(-Attenuation_length[0,1]*(c[1]-In)))*(np.exp(-Attenuation_length[0,2]*(OD-c[1])))
+Transmission_5[2]=(np.exp(-Attenuation_length[0,3]*(c[2]-In)))*(np.exp(-Attenuation_length[0,2]*(OD-c[2])))
 st.write('Transmission', Transmission_5)
 
 #*(exp(-Attenuation_length[0,0]))
