@@ -77,15 +77,7 @@ str_t0 = st.sidebar.text_input('Energy, meV', '5')
 t0 = float(str_t0)
 
 K = OD/In
-Attenuation_length = np.random.randn(2,4)
-Attenuation_length[0,0]=  0.09885926    #Attenuation length TAV6 5.1 meV
-Attenuation_length[1,0]=  0.06022102    #Attenuation length TAV6 20 meV
-Attenuation_length[0,1]=  0.1089454     #Attenuation length CuBe 5.1meV
-Attenuation_length[1,1]=  0.1195674     #Attenuation length CuBe 20 meV
-Attenuation_length[0,2]=  0.01237508    #Attenuation length Al 5.1meV
-Attenuation_length[1,2]=  0.008164399   #Attenuation length Al 20.4meV
-Attenuation_length[0,3]=  0.1467938     #Attenuation length NiCrAl 5.1meV
-Attenuation_length[1,3]=  0.1783196     #Attenuation length NiCrAl 20.4meV
+
   
   
 Total = np.random.randn(6, 3)
@@ -96,10 +88,29 @@ Total[3,]=Pressure_max
 st.write('K=a/b', K)
 #st.write('K=a/b', K)
 
+Attenuation_length = np.random.randn(3,4)
+Attenuation_length[0,0]=  0.09885926    #Attenuation length TAV6 5.1 meV
+Attenuation_length[1,0]=  0.06022102    #Attenuation length TAV6 20 meV
+
+Attenuation_length[0,1]=  0.1089454     #Attenuation length CuBe 5.1meV
+Attenuation_length[1,1]=  0.1195674     #Attenuation length CuBe 20 meV
+
+Attenuation_length[0,2]=  0.01237508    #Attenuation length Al 5.1meV
+Attenuation_length[1,2]=  0.008164399   #Attenuation length Al 20.4meV
+
+Attenuation_length[0,3]=  0.1467938     #Attenuation length NiCrAl 5.1meV
+Attenuation_length[1,3]=  0.1783196     #Attenuation length NiCrAl 20.4meV
+
+Attenuation_length[2,0]<-896 -          #Yield strength TAV6, MPa
+Attenuation_length[2,1]<-1240           #Yield strength CuBe, MPa
+Attenuation_length[2,2]<-585            #Yield strength Al, MPa
+Attenuation_length[2,3]<-1530           #Yield strength NiCrAl, MPa
+
+
 df2 = pd.DataFrame(
   data=Attenuation_length,
   columns=('TAV6','CuBe','Al', 'NiCrAl'),
-  index = ('Attenuation length 5.1 meV','Attenuation length 20 meV'))
+  index = ('Attenuation length 5.1 meV','Attenuation length 20 meV','Yield strength MPa'  ))
   
   
  
@@ -136,8 +147,6 @@ st.table(df2)
     #plt.hist(arr, bins=20)
    # #st.plotly_chart(fig4)
     #st.pyplot(fig4, clear_figure=True)
-
-
       
  
 
