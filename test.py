@@ -124,6 +124,14 @@ Total[6,2]= Attenuation_length[2,3]/Attenuation_length[2,2]
 #*(exp(-Attenuation_length[0,0]))
 #<-(exp(-A_CuBe_5*(c[k,i]-a[k])))*(exp(-A_TAV6_5*((K[k,i,j]*a[k])-c[k,i]))
 
+Alfa[1]=Attenuation_length[2,1]/Attenuation_length[2,0]
+Alfa[2]=Attenuation_length[2,1]/Attenuation_length[2,2]
+Alfa[3]=Attenuation_length[2,3]/Attenuation_length[2,2]
+
+st.write('Alfa', Alfa)
+#P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
+
+
 with _lock:
 #    fig4 = hq.plot()
  #   ax = fig4.gca()
