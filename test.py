@@ -195,6 +195,7 @@ st.markdown('CuBe/TAV6 with analytical parameters')
 st.write('Inner diameter a=, mm',a)
 st.write('Maximal pressure, kbar', Pressure_max)
 st.write('Outer diameter b=(2*a*Sigma[0]*(np.sqrt(Alfa[0])))/(Sigma[0]*(1+Alfa[0])-2*Pressure_max*100)')
+st.write('c=(np.sqrt(np.sqrt(Alfa[0])))*np.sqrt(a*b)')
 st.write('Signal=a^2*(np.exp(-A1*(c-a)))*(np.exp(-A2*(b-c)))')
 
 
