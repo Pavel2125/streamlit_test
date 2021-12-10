@@ -6,10 +6,6 @@ import numpy as np
 #echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 import matplotlib.pyplot as plt
 
-x=[1,2,3,4,5]
-y=[5,4,4,3,2]
-plt.plot(x,y)
-print(x)
 
 
 import requests, os
@@ -184,6 +180,14 @@ plt.hist(arr, bins=20)
    # #st.plotly_chart(fig4)
 
 st.pyplot(fig4, clear_figure=True)
+
+
+x=[1,2,3,4,5]
+y=[5,4,4,3,2]
+fig5 = plt.plot(x,y)
+
+st.pyplot(fig5, clear_figure=True))
+#print(x)
       
  
 
