@@ -182,7 +182,8 @@ st.table(df2)
     fig4 = plt.figure()
     plt.hist(arr, bins=20)
    # #st.plotly_chart(fig4)
-    st.pyplot(fig4, clear_figure=True)
+
+st.pyplot(fig4, clear_figure=True)
       
  
 
