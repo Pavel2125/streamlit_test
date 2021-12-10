@@ -226,11 +226,11 @@ y=(a**2)*(np.exp(-Attenuation_length[0,3]*(C-a)))*(np.exp(-Attenuation_length[0,
 
 #y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
 
-st.markdown('CuBe/Al with analytical parameters')
+st.markdown('NiCrAl/Al with analytical parameters')
 
-fig6 = plt.figure()
+fig7 = plt.figure()
 plt.plot(a,y)
-st.pyplot(fig6, clear_figure=True)
+st.pyplot(fig7, clear_figure=True)
 st.write('b',b)
 st.write('Analitical C',C) 
 
