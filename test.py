@@ -189,7 +189,10 @@ a=np.array([4,5,6,7,8])
 
 b=(2*a*Sigma[0]*(np.sqrt(Alfa[0])))/(Sigma[0]*(1+Alfa[0])-2*Pressure_max*100)
 C=(np.sqrt(np.sqrt(Alfa[0])))*np.sqrt(a*b)
-y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
+y=(a**2)*(np.exp(-Attenuation_length[0,1]*(C-a)))*(np.exp(-Attenuation_length[0,0]*(b-C)))
+
+#y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
+
 fig5 = plt.figure()
 plt.plot(a,y)
 
