@@ -198,9 +198,6 @@ st.write('Outer diameter b=(2*a*Sigma[0]*(np.sqrt(Alfa[0])))/(Sigma[0]*(1+Alfa[0
 st.write('c=(np.sqrt(np.sqrt(Alfa[0])))*np.sqrt(a*b)')
 st.write('Signal=a^2*(np.exp(-A1*(c-a)))*(np.exp(-A2*(b-c)))')
 
-
-
-
 fig5 = plt.figure()
 plt.plot(a,y)
 
@@ -209,6 +206,17 @@ st.write('b',b)
 
 #st.pyplot(fig5, clear_figure=True)
 st.write('Maximal pressure',Pressure_max)
-st.write('Analitical C',C)   
- 
+st.write('Analitical C',C) 
+
+b=(2*a*Sigma[1]*(np.sqrt(Alfa[1])))/(Sigma[1]*(1+Alfa[1])-2*Pressure_max*100)
+C=(np.sqrt(np.sqrt(Alfa[1])))*np.sqrt(a*b)
+y=(a**2)*(np.exp(-Attenuation_length[0,1]*(C-a)))*(np.exp(-Attenuation_length[0,2]*(b-C)))
+
+#y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
+
+st.markdown('CuBe/TAV6 with analytical parameters')
+
+fig6 = plt.figure()
+plt.plot(a,y)
+st.pyplot(fig6, clear_figure=True)
 
