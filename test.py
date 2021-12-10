@@ -185,7 +185,7 @@ st.table(df2)
 st.write('CuBe/TAV6 with analytical parameters, a=[4,8], P=8kbar, Signal=a^2*(np.exp(-A1*(c-a)))*(np.exp(-A2*(b-c)))')
 a=np.array([4,5,6,7,8])
 
-b=(c[0]**2)*np.sqrt((Sigma[0])/(Alfa[0]*(c[0]**2)*Sigma[0]+(c[0]**2)*Sigma[0]-(a**2)*Alfa[0]*Sigma[0]-2*Pressure_max*(c[0]**2)))
+b=(c[0]**2)*np.sqrt((Sigma[0])/(Alfa[0]*(c[0]**2)*Sigma[0]+(c[0]**2)*Sigma[0]-(a**2)*Alfa[0]*Sigma[0]-2*Pressure_max*100*(c[0]**2)))
 
 y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
 fig5 = plt.figure()
@@ -193,6 +193,9 @@ plt.plot(a,y)
 
 st.pyplot(fig5, clear_figure=True)
 st.write('b',b)
+
+#st.pyplot(fig5, clear_figure=True)
+st.write('Maximal pressure',Pressure_max)
 #print(x)
       
  
