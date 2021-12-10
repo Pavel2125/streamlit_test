@@ -215,8 +215,8 @@ st.markdown('CuBe/Al with analytical parameters')
 fig6 = plt.figure()
 plt.plot(a,y)
 st.pyplot(fig6, clear_figure=True)
-st.write('b',b)
-st.write('Analitical C',C) 
+#st.write('b',b)
+#st.write('Analitical C',C) 
 
 
 
@@ -231,7 +231,7 @@ st.markdown('NiCrAl/Al with analytical parameters')
 fig7 = plt.figure()
 plt.plot(a,y)
 st.pyplot(fig7, clear_figure=True)
-st.write('b',b)
-st.write('Analitical C',C) 
+#st.write('b',b)
+#st.write('Analitical C',C) 
 
 
