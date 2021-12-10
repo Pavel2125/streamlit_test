@@ -202,11 +202,7 @@ fig5 = plt.figure()
 plt.plot(a,y)
 
 st.pyplot(fig5, clear_figure=True)
-st.write('b',b)
 
-#st.pyplot(fig5, clear_figure=True)
-st.write('Maximal pressure',Pressure_max)
-st.write('Analitical C',C) 
 
 b=(2*a*Sigma[1]*(np.sqrt(Alfa[1])))/(Sigma[1]*(1+Alfa[1])-2*Pressure_max*100)
 C=(np.sqrt(np.sqrt(Alfa[1])))*np.sqrt(a*b)
@@ -214,9 +210,10 @@ y=(a**2)*(np.exp(-Attenuation_length[0,1]*(C-a)))*(np.exp(-Attenuation_length[0,
 
 #y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
 
-st.markdown('CuBe/TAV6 with analytical parameters')
+st.markdown('CuBe/Al with analytical parameters')
 
 fig6 = plt.figure()
 plt.plot(a,y)
 st.pyplot(fig6, clear_figure=True)
-
+st.write('b',b)
+st.write('Analitical C',C) 
