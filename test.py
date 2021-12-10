@@ -168,8 +168,7 @@ with _lock:
         data=Total,
            columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'),
            index=('Inner diameter "a",mm', 'First material diameter "c",mm', 'Outer diameter "b",mm', 'K=a/b', 'Maximal pressure', 'Transmisson at 5 meV', 'Transmission at 20 meV', 'Alfa'))
-#          columns=('CuBe/TAV6', 'CuBe/Al', 'NiCrAl/Al'))
-#           columns=('cola %d' % i for i in range(5)))
+
 st.table(df2)    
   
 
@@ -181,11 +180,12 @@ plt.hist(arr, bins=20)
 
 st.pyplot(fig4, clear_figure=True)
 
-
-x=np.array([4,5,6,7,8])
-y=x*x
+st.write('CuBe/TAV6 with analytical parameters')
+a=np.array([4,5,6,7,8])
+y=a*a*a
+#(np.exp(-Attenuation_length[0,1]*(c[0]-In)))*(np.exp(-Attenuation_length[0,0]*(OD-c[0])))
 fig5 = plt.figure()
-plt.plot(x,y)
+plt.plot(a,y)
 
 st.pyplot(fig5, clear_figure=True)
 #print(x)
