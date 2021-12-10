@@ -196,7 +196,6 @@ st.write('b',b)
 
 #st.pyplot(fig5, clear_figure=True)
 st.write('Maximal pressure',Pressure_max)
-#print(x)
-      
+st.write('Analitical C',C)   
  
 
