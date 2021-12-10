@@ -183,7 +183,7 @@ st.pyplot(fig4, clear_figure=True)
 
 
 x=np.array([1,2,3,4,5])
-y=2*x
+y=x*x
 fig5 = plt.figure()
 plt.plot(x,y)
 
