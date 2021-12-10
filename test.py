@@ -6,10 +6,10 @@ import numpy as np
 #echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 import matplotlib.pyplot as plt
 
-#x=[1,2,3,4,5]
-#y=[5,4,4,3,2]
-#plt.plot(x,y)
-#print(x)
+x=[1,2,3,4,5]
+y=[5,4,4,3,2]
+plt.plot(x,y)
+print(x)
 
 
 import requests, os
