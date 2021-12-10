@@ -126,7 +126,7 @@ Sigma[2]=Attenuation_length[2,2]
 
 P_max=np.random.randn(3)
 #P_max=(S_Al/2)*(Alfa[i]*(1 - (a[k]/c[k,i])^2) + 1 - (c[k,i]/(K[k,i,j]*a[k]))^2)
-P_max=(Sigma/2)*(Alfa*(1-(In/c)*(In/c)) + 1 - (c/OD)*(c/OD)) 
+P_max=(Sigma/2)*(Alfa*(1-(In/c)**2) + 1 - (c/OD)**2) 
 
 Transmission_5= np.random.randn(3)
 Transmission_5[0]=(np.exp(-Attenuation_length[0,1]*(c[0]-In)))*(np.exp(-Attenuation_length[0,0]*(OD-c[0])))
@@ -182,6 +182,7 @@ st.pyplot(fig4, clear_figure=True)
 
 st.write('CuBe/TAV6 with analytical parameters, a=[4,8], P=8kbar, Signal=a^2*(np.exp(-A1*(c-a)))*(np.exp(-A2*(b-c)))')
 a=np.array([4,5,6,7,8])
+
 b=(c[0]**2)*np.sqrt((Sigma[0])/(Alfa[0]*(c[0]**2)*Sigma[0]+(c[0]**2)*Sigma[0]-(a**2)*Alfa[0]*Sigma[0]-2*P_max[0]*(c[0]**2)))
 
 y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
