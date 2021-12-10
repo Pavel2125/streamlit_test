@@ -184,7 +184,8 @@ st.pyplot(fig4, clear_figure=True)
 
 x=[1,2,3,4,5]
 y=[5,4,4,3,2]
-fig5 = plt.plot(x,y)
+fig5 = plt.figure()
+plt.plot(x,y)
 
 st.pyplot(fig5, clear_figure=True)
 #print(x)
