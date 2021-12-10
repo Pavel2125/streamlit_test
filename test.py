@@ -186,7 +186,7 @@ x=[1,2,3,4,5]
 y=[5,4,4,3,2]
 fig5 = plt.plot(x,y)
 
-st.pyplot(fig5, clear_figure=True))
+st.pyplot(fig5, clear_figure=True)
 #print(x)
       
  
