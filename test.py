@@ -185,7 +185,8 @@ a=np.array([4,5,6,7,8])
 st.markdown('CuBe/TAV6 with analytical parameters')
 st.write('Inner diameter a=, mm',a)
 st.write('Maximal pressure, kbar', Pressure_max)
-st.write('Signal, Signal=a^2*(np.exp(-A1*(c-a)))*(np.exp(-A2*(b-c)))')
+st.write('Outer diameter', b)
+st.write('Signal=a^2*(np.exp(-A1*(c-a)))*(np.exp(-A2*(b-c)))')
 
 
 #b=(c[0]**2)*np.sqrt((Sigma[0])/(Alfa[0]*(c[0]**2)*Sigma[0]+(c[0]**2)*Sigma[0]-(a**2)*Alfa[0]*Sigma[0]-2*Pressure_max*100*(c[0]**2)))
