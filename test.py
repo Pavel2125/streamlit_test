@@ -182,8 +182,7 @@ st.pyplot(fig4, clear_figure=True)
 
 st.write('CuBe/TAV6 with analytical parameters')
 a=np.array([4,5,6,7,8])
-y=a*a*a
-#(np.exp(-Attenuation_length[0,1]*(c[0]-In)))*(np.exp(-Attenuation_length[0,0]*(OD-c[0])))
+y=a*a*(np.exp(-Attenuation_length[0,1]*(c[0]-In)))*(np.exp(-Attenuation_length[0,0]*(OD-c[0])))
 fig5 = plt.figure()
 plt.plot(a,y)
 
