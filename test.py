@@ -182,7 +182,7 @@ plt.hist(arr, bins=20)
 st.pyplot(fig4, clear_figure=True)
 
 
-x=[1,2,3,4,5]
+x=np.array([1,2,3,4,5])
 y=2*x
 fig5 = plt.figure()
 plt.plot(x,y)
