@@ -263,6 +263,7 @@ st.pyplot(fig8, clear_figure=True)
 #st.write('b',b)
 #st.write('Analitical C',C) 
 st.write('Outer diameter b=, mm',b)
+st.write('Ultimate P=, kbar',Pressure_max*1.3)
 st.markdown("""
  * Al/Al PC1 Ravil Sadikov cell
  * P = 12kbar, a=8 mm, b=55 mm, c=0 mm
