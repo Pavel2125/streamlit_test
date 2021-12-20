@@ -205,7 +205,7 @@ st.pyplot(fig5, clear_figure=True)
 st.write('Outer diameter b=, mm',b)
 st.markdown("""
  * CuBe/TAV6 Gaetan Ansys calculation
- * P = 10kbar, a=6 mm, b=20 mm
+ * P = 10kbar, a=6 mm, b=20 mm, c=10.5 mm
 """)
 
 
