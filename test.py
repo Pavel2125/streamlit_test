@@ -238,5 +238,8 @@ plt.plot(a,y)
 st.pyplot(fig7, clear_figure=True)
 #st.write('b',b)
 #st.write('Analitical C',C) 
-
-
+st.write('Outer diameter b=, mm',b)
+st.markdown("""
+ * NiCrAl/Al PC2 Ravis Sadikov cell
+ * P = 10kbar, a=8 mm, b=46 mm, c=11.5 mm
+""")
