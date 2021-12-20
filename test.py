@@ -245,8 +245,8 @@ st.markdown("""
  * P = 10kbar, a=8 mm, b=46 mm, c=11.5 mm
 """)
 Alfa[3]=1
-b=(2*a*Sigma[2]*(np.sqrt(Alfa[2])))/(Sigma[2]*(1+Alfa[2])-2*Pressure_max*100)
-C=(np.sqrt(np.sqrt(Alfa[2])))*np.sqrt(a*b)
+b=(2*a*Sigma[2]*(np.sqrt(Alfa[3])))/(Sigma[2]*(1+Alfa[3])-2*Pressure_max*100)
+C=(np.sqrt(np.sqrt(Alfa[3])))*np.sqrt(a*b)
 y=(a**2)*(np.exp(-Attenuation_length[0,3]*(C-a)))*(np.exp(-Attenuation_length[0,2]*(b-C)))
 
 #y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
