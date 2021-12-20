@@ -192,7 +192,7 @@ y=(a**2)*(np.exp(-Attenuation_length[0,1]*(C-a)))*(np.exp(-Attenuation_length[0,
 #y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
 
 st.markdown('CuBe/TAV6 with analytical parameters')
-st.write('Inner diameter a=, mm',a)
+#st.write('Inner diameter a=, mm',a)
 st.write('Maximal pressure, kbar', Pressure_max)
 st.write('Outer diameter b=(2*a*Sigma[0]*(np.sqrt(Alfa[0])))/(Sigma[0]*(1+Alfa[0])-2*Pressure_max*100)')
 st.write('c=(np.sqrt(np.sqrt(Alfa[0])))*np.sqrt(a*b)')
