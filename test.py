@@ -181,7 +181,7 @@ st.table(df2)
 
 #st.pyplot(fig4, clear_figure=True)
 
-a=np.array([4,5,6,7,8])
+a=np.array([4,5,6,7,8,9,10])
 #b=(c[0]**2)*np.sqrt((Sigma[0])/(Alfa[0]*(c[0]**2)*Sigma[0]+(c[0]**2)*Sigma[0]-(a**2)*Alfa[0]*Sigma[0]-2*Pressure_max*100*(c[0]**2)))
 
 
