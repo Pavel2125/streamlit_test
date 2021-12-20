@@ -205,7 +205,7 @@ st.pyplot(fig5, clear_figure=True)
 
 
 #b=(2*a*Sigma[1]*(np.sqrt(Alfa[1])))/(Sigma[1]*(1+Alfa[1])-2*Pressure_max*100)
-b=20
+b=10
 C=(np.sqrt(np.sqrt(Alfa[1])))*np.sqrt(a*b)
 y=(a**2)*(np.exp(-Attenuation_length[0,1]*(C-a)))*(np.exp(-Attenuation_length[0,2]*(b-C)))
 
