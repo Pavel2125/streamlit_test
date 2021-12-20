@@ -204,6 +204,7 @@ plt.plot(a,y)
 
 st.pyplot(fig5, clear_figure=True)
 st.write('Outer diameter b=, mm',b)
+st.write('Ultimate P=, kbar',Pressure_max*1.3)
 st.markdown("""
  * CuBe/TAV6 Gaetan Ansys calculation
  * P = 10kbar, a=6 mm, b=20 mm, c=10.5 mm
@@ -224,6 +225,7 @@ st.pyplot(fig6, clear_figure=True)
 #st.write('b',b)
 #st.write('Analitical C',C) 
 st.write('Outer diameter b=, mm',b)
+st.write('Ultimate P=, kbar',Pressure_max*1.3)
 st.markdown("""
  * CuBe/Al Ravil Sadikov cell
  * P = 10kbar, a=8 mm, b=46 mm, c=0 mm
@@ -244,6 +246,7 @@ st.pyplot(fig7, clear_figure=True)
 #st.write('b',b)
 #st.write('Analitical C',C) 
 st.write('Outer diameter b=, mm',b)
+st.write('Ultimate P=, kbar',Pressure_max*1.3)
 st.markdown("""
  * NiCrAl/Al PC2 Ravil Sadikov cell
  * P = 10kbar, a=8 mm, b=46 mm, c=11.5 mm
