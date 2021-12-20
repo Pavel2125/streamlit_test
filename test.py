@@ -224,7 +224,7 @@ plt.plot(a,y)
 st.pyplot(fig6, clear_figure=True)
 #st.write('b',b)
 #st.write('Analitical C',C) 
-st.write('Outer diameter b=, mm',b)
+st.write('Outer diameter b=, mm',b,a)
 st.write('Ultimate P=, kbar',Pressure_max*1.3)
 st.markdown("""
  * CuBe/Al Ravil Sadikov cell
