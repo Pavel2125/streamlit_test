@@ -122,8 +122,8 @@ c=np.sqrt(np.sqrt(Alfa))*np.sqrt(In*OD)
 
 Sigma=np.random.randn(3)
 Sigma[0]=Attenuation_length[2,0] #Yield Strenght TAV6
-Sigma[1]=Attenuation_length[2,2] #Yield Strenght NiCrAl
-Sigma[2]=Attenuation_length[2,2] #Yield Strenght NiCrAl
+Sigma[1]=Attenuation_length[2,2] #Yield Strenght Al
+Sigma[2]=Attenuation_length[2,2] #Yield Strenght Al
 #st.write('Sigma', Sigma)
 
 P_max=np.random.randn(3)
@@ -245,7 +245,7 @@ st.markdown("""
  * P = 10kbar, a=8 mm, b=46 mm, c=11.5 mm
 """)
 Alf=1
-b=(2*a*Attenuation_length[2,1]*(np.sqrt(Alf)))/(Attenuation_length[2,1]*(1+Alf)-2*Pressure_max*100)
+b=(2*a*Attenuation_length[2,2]*(np.sqrt(Alf)))/(Attenuation_length[2,2]*(1+Alf)-2*Pressure_max*100)
 C=(np.sqrt(np.sqrt(Alf)))*np.sqrt(a*b)
 y=(a**2)*(np.exp(-Attenuation_length[0,2]*(C-a)))*(np.exp(-Attenuation_length[0,2]*(b-C)))
 
