@@ -107,11 +107,11 @@ df2 = pd.DataFrame(
 st.table(df2)
 
 
-Alfa=np.random.randn(4)
+Alfa=np.random.randn(3)
 Alfa[0]=Attenuation_length[2,1]/Attenuation_length[2,0]
 Alfa[1]=Attenuation_length[2,1]/Attenuation_length[2,2]
 Alfa[2]=Attenuation_length[2,3]/Attenuation_length[2,2]
-Alfa[3]=1
+#Alfa[3]=1
 #st.write('Alfa', Alfa)
 
 
