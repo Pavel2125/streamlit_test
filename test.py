@@ -203,6 +203,10 @@ plt.plot(a,y)
 
 st.pyplot(fig5, clear_figure=True)
 st.write('Outer diameter b=, mm',b)
+st.markdown("""
+ * CuBe/TAV6 Gaetan Ansys calculation
+ * P = 10kbar, a=6 mm, b=20 mm
+""")
 
 
 b=(2*a*Sigma[1]*(np.sqrt(Alfa[1])))/(Sigma[1]*(1+Alfa[1])-2*Pressure_max*100)
