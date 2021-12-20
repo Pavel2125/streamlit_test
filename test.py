@@ -107,10 +107,11 @@ df2 = pd.DataFrame(
 st.table(df2)
 
 
-Alfa=np.random.randn(3)
+Alfa=np.random.randn(4)
 Alfa[0]=Attenuation_length[2,1]/Attenuation_length[2,0]
 Alfa[1]=Attenuation_length[2,1]/Attenuation_length[2,2]
 Alfa[2]=Attenuation_length[2,3]/Attenuation_length[2,2]
+Alfa[3]=1
 #st.write('Alfa', Alfa)
 
 
@@ -240,6 +241,25 @@ st.pyplot(fig7, clear_figure=True)
 #st.write('Analitical C',C) 
 st.write('Outer diameter b=, mm',b)
 st.markdown("""
- * NiCrAl/Al PC2 Ravis Sadikov cell
+ * NiCrAl/Al PC2 Ravil Sadikov cell
  * P = 10kbar, a=8 mm, b=46 mm, c=11.5 mm
+""")
+Alfa[3]=1
+b=(2*a*Sigma[2]*(np.sqrt(Alfa[2])))/(Sigma[2]*(1+Alfa[2])-2*Pressure_max*100)
+C=(np.sqrt(np.sqrt(Alfa[2])))*np.sqrt(a*b)
+y=(a**2)*(np.exp(-Attenuation_length[0,3]*(C-a)))*(np.exp(-Attenuation_length[0,2]*(b-C)))
+
+#y=(a**2)*(np.exp(-Attenuation_length[0,1]*(c[0]-a)))*(np.exp(-Attenuation_length[0,0]*(b-c[0])))
+
+st.markdown('Al/Al with analytical parameters')
+
+fig8 = plt.figure()
+plt.plot(a,y)
+st.pyplot(fig8, clear_figure=True)
+#st.write('b',b)
+#st.write('Analitical C',C) 
+st.write('Outer diameter b=, mm',b)
+st.markdown("""
+ * Al/Al PC1 Ravil Sadikov cell
+ * P = 12kbar, a=8 mm, b=55 mm, c=0 mm
 """)
