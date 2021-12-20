@@ -244,8 +244,8 @@ st.markdown("""
  * NiCrAl/Al PC2 Ravil Sadikov cell
  * P = 10kbar, a=8 mm, b=46 mm, c=11.5 mm
 """)
-Alfa[3]=1
-b=(2*a*Sigma[2]*(np.sqrt(Alfa[3])))/(Sigma[2]*(1+Alfa[3])-2*Pressure_max*100)
+Alf=1
+b=(2*a*Sigma[2]*(np.sqrt(Alf)))/(Sigma[2]*(1+Alf)-2*Pressure_max*100)
 C=(np.sqrt(np.sqrt(Alfa[3])))*np.sqrt(a*b)
 y=(a**2)*(np.exp(-Attenuation_length[0,3]*(C-a)))*(np.exp(-Attenuation_length[0,2]*(b-C)))
 
